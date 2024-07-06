@@ -261,15 +261,9 @@ PRODUCT_PACKAGES += \
 # Media
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
-    libmm-omxcore \
-    libOmxAacEnc \
-    libOmxAmrEnc \
     libOmxCore \
-    libOmxEvrcEnc \
-    libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libOmxG711Enc \
     libplatformconfig \
     libstagefrighthw \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor
