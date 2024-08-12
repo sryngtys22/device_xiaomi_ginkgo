@@ -25,16 +25,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
-$(call inherit-product, vendor/clown/config/common.mk)
+$(call inherit-product, vendor/clown/config/common_full_phone.mk)
 
-# Inherit some common Xdroid stuff
+# Inherit some common ClownUI stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 CLOWN_OFFICIAL := true
 CLOWN_MAINTAINER := Ryuzenn
-
-
-#Face Unlock
-#TARGET_FACE_UNLOCK_SUPPORTED := true
 
 #GMS Settings
 TARGET_INCLUDE_STOCK_ARCORE := true
@@ -49,8 +45,3 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8/8T
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "google/husky/husky:14/UD1A.230803.041/10808477:user/release-keys"
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="husky-user 14 UD1A.230803.001/10808477 release-keys"
