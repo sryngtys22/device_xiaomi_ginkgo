@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2023 ClownUI
+# Copyright (C) 2023 PixelOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/clown_ginkgo.mk
+    $(LOCAL_DIR)/aosp_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    clown_ginkgo-user \
-    clown_ginkgo-userdebug \
-    clown_ginkgo-eng
+    aosp_ginkgo-user \
+    aosp_ginkgo-userdebug \
+    aosp_ginkgo-eng
