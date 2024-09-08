@@ -116,8 +116,7 @@ PRODUCT_PACKAGES += \
 
 # Config Store
 PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-service \
-    android.hardware.configstore@1.1-service
+    disable_configstore
 
 # Display/Graphics
 PRODUCT_AAPT_CONFIG := normal
@@ -300,10 +299,15 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
 # NFC
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/nxp/opensource/sn100x
+
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service \
-    NfcNci \
-    Tag
+    com.android.nfc_extras \
+    com.nxp.nfc.nq \
+    NQNfcNci \
+    Tag \
+    vendor.nxp.hardware.nfc@2.0-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
@@ -476,7 +480,6 @@ PRODUCT_COPY_FILES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
-    android.hardware.wifi.supplicant@1.4.vendor \
     hostapd \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
@@ -487,10 +490,7 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf \
     vendor.qti.hardware.wifi.hostapd@1.1.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.0.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.1.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.2.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.3.vendor
+    vendor.qti.hardware.wifi.supplicant@2.0.vendor 
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/hostapd.accept:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.accept \
