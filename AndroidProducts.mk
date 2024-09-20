@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/clown_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    clown_ginkgo-user \
-    clown_ginkgo-userdebug \
-    clown_ginkgo-eng
+    clown_ginkgo-ap2a-user \
+    clown_ginkgo-ap2a-userdebug \
+    clown_ginkgo-ap2a-eng
