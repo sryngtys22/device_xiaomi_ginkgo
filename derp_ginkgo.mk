@@ -25,21 +25,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
-$(call inherit-product, vendor/clown/config/common_full_phone.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
-# Inherit some common ClownUI stuff
+# Inherit some common Derpfest stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-CLOWN_OFFICIAL := true
-CLOWN_MAINTAINER := Ryuzenn
+TARGET_NOT_USES_BLUR := true
 
 #GMS Settings
+WITH_GMS := true
+TARGET_USES_MINI_GAPPS := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # Device identifier
-PRODUCT_NAME := clown_ginkgo
+PRODUCT_NAME := derp_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8/8T
