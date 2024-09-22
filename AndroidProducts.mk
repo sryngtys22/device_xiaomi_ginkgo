@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2023 ClownUI
+# Copyright (C) 2023 MistOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/clown_ginkgo.mk
+    $(LOCAL_DIR)/mist_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    clown_ginkgo-ap2a-user \
-    clown_ginkgo-ap2a-userdebug \
-    clown_ginkgo-ap2a-eng
+    mist_ginkgo-user \
+    mist_ginkgo-userdebug \
+    mist_ginkgo-eng
