@@ -31,6 +31,8 @@ $(call inherit-product, vendor/clown/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 CLOWN_OFFICIAL := true
 CLOWN_MAINTAINER := Ryuzenn
+WITH_GMS := true
+TARGET_USES_MINI_GAPPS := true
 
 #GMS Settings
 TARGET_INCLUDE_STOCK_ARCORE := true
