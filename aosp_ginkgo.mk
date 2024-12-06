@@ -27,6 +27,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Inherit pixel-priv keys
+$(call inherit-product, vendor/pixel-priv/keys/keys.mk)
+
 # Inherit some common PixelOS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 
