@@ -32,6 +32,7 @@ $(call inherit-product, vendor/pixel-priv/keys/keys.mk)
 
 # Inherit some common PixelOS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
+PRODUCT_NO_CAMERA := false
 
 # Device identifier
 PRODUCT_NAME := aosp_ginkgo
