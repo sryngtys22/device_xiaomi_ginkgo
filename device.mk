@@ -364,6 +364,13 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+# USB debugging at boot
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.usb.config=mtp,adb \
+ro.adb.secure=0 \
+ro.secure=0 \
+ro.debuggable=1
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
