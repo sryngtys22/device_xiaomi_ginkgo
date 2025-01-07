@@ -25,11 +25,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
-$(call inherit-product, vendor/clown/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit some common ClownUI stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-CLOWN_OFFICIAL := true
+CLOWN_BUILD_TYPE := OFFICIAL
 CLOWN_MAINTAINER := Ryuzenn
 WITH_GMS := true
 TARGET_USES_MINI_GAPPS := true
